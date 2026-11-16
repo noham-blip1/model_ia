@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-IMAGINE_V1 — IANC-003 : fine-tuning sur le jeu de donnees nettoye.
-
-- Lit train_clean.jsonl et val_clean.jsonl produits par audit_clean_ianc003.py.
-- Ne modifie jamais le checkpoint IANC-003 de base.
-- Enregistre le modele affine dans models/ianc003_refined/.
-- Conserve un etat de reprise a chaque evaluation.
-"""
 
 from pathlib import Path
 import hashlib
@@ -38,11 +30,6 @@ MODEL_DIR = ROOT / "models" / "ianc003_refined"
 BEST_CHECKPOINT = MODEL_DIR / "ianc003_refined_best.pt"
 LATEST_STATE = MODEL_DIR / "refined_training_state.pt"
 METRICS_FILE = MODEL_DIR / "refined_metrics.json"
-
-
-# ---------------------------------------------------------------------------
-# REGLAGES PRUDENTS POUR LA QUADRO T1000 4 GO
-# ---------------------------------------------------------------------------
 
 MAX_STEPS = 1200
 BATCH_SIZE = 1
