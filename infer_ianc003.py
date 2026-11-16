@@ -1,6 +1,5 @@
 
 # -*- coding: utf-8 -*-
-"""Imagine_v1 - IANC-003 : inference robuste."""
 
 from pathlib import Path
 import hashlib
