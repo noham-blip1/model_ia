@@ -1,1 +1,1 @@
-"# model_ia" 
+une partie du code d’une ia
